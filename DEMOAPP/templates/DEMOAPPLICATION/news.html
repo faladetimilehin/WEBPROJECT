@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	{% load static %}
+	<link href="{% static 'tiny/css/prism.css' %}" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<title>Aerry/News</title>
+
+	<style>
+		body{ margin: 0;
+			background-image: url(1.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+
+		/* Style the header */
+header {
+  background-color: #666;
+  padding: 18px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+		/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+section{
+	text-align: center;
+}
+form{
+	text-align: center;
+}
+		.city{
+			background-color: tomato;
+			color: white;
+			padding: 10px;
+		}
+		h1{color: blue;}
+		p{color: red;}
+		img{width: 100%;}
+		table, th, td {
+			border :1px solid black;
+			border-collapse: collapse;
+		}
+
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333333;
+	}
+	li{
+		float: left;
+	}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 19px;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+<nav>
+<!--    begining of nav bar-->
+			<div class="nav-wrapper">
+				<a href="/" class="brand-logo">Aerry</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href='hi'>Home</a></li>
+				<li><a href="news">News</a></li>
+			    <li><a href="guestform">Guest</a></li>
+			    <li><a href="about">About</a></li>
+			</ul>
+			</div>
+</nav>
+<!--ending of nav bar-->
+<!--beginning of image slider-->
+        <div class="w3-content w3-display-container">
+            <div class="w3-display-container mySlides">
+                <img src="{% static 'images/1.jpg'%}" style="width:100%">
+            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                French Alps
+            </div>
+            </div>
+            <div class="w3-display-container mySlides">
+                <img src="{% static 'images/2.jpg'%}" style="width:100%">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                Northern Lights
+            </div>
+            </div>
+            <div class="w3-display-container mySlides">
+              <img src="{% static 'images/3.jpg'%}" style="width:100%">
+            <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                Beautiful Mountains
+            </div>
+            </div>
+            <div class="w3-display-container mySlides">
+              <img src="{% static 'images/4.jpg'%}" style="width:100%">
+            <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                The Rain Forest
+            </div>
+            </div>
+            <div class="w3-display-container mySlides">
+              <img src="{% static 'images/5.jpg'%}" style="width:100%">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                Mountains!
+            </div>
+            </div>
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+<!--end of image slider-->
+<!--beginning of image slider script-->
+<script>
+ var myIndex = 0;
+      carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+
+
+</script>
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+<!--end of image slider script-->
+
+
+
+</body>
+ <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Aerry Connecting Offices</h5>
+                <p class="grey-text text-lighten-4">This is me creating the downpage for JMB Messaging app &copy;JMB &trade;.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h6 class="white-text">08087240516<i class="material-icons">call</i></h6>
+                <ul>
+                  <li><a class="fa fa-twitter" href="https://Twitter.com/">Twitter</a></li>
+                  <li><a class="fa fa-facebook" href="https://facebook.com/">Facebook</a></li>
+                  <li><a class="fa fa-instagram" href="https://Instagram.com/">Instagram</a></li>
+                  <li><a class="fa fa-youtube" href="https://Youtube.com/">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Copyright Jethro Systems
+            <a class="grey-text text-lighten-4 right" href="mailto:faladetimilehin@yahoo.com"><i class="material-icons">email</i>Support Center</a>
+            </div>
+          </div>
+ </footer>
+
+</html>
