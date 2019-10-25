@@ -14,8 +14,8 @@ def news(request):
 
 
 def guestform(request):
-    show = Officer.objects.filter()
-    return render(request, 'DEMOAPPLICATION/guestform.html', context={"Officer": Officer.objects.all})
+    show = Officer.objects.filter(officer_fname='olu')
+    return render(request, 'DEMOAPPLICATION/guestform.html', context={"show": show})
 
 
 def about(request):

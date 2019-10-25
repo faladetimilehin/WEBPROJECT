@@ -25,6 +25,7 @@
 			background-image: url(1.jpg);
 			background-repeat: no-repeat;
 			background-attachment: fixed;
+
 		}
 
 		/* Style the header */
@@ -51,7 +52,7 @@ form{
 }
 		.city{
 			background-color: tomato;
-			color: white;
+			color: black;
 			padding: 10px;
 		}
 		h1{color: blue;}
@@ -103,7 +104,7 @@ li a{
         <h4>Please fill the details below</h4>
     </div>
 
-        <form action="" method="POST">
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
                 <div class="form-group">
                     <label class="form-label">First Name<i class="material-icons prefix">account_circle</i></label>
                     <input type="text" name="firstname" class="form-control" placeholder="Enter your Firstname" required="">
@@ -135,10 +136,15 @@ li a{
                     </label>
                 </div>
                 <div class="text-center">
-                   <button type="submit" name="submit"class="btn btn-primary">Submit</button>
+                   <button type="submit" name="submit"class="btn btn-primary">Send message<span></span></button>
                 </div>
-        </form>
 
+<!--end of the sumbit form and must go to the mail            -->
+
+        </form>
+<select inpu>{% for data in show %}
+data.fname
+{% endfor %}</select>
 </body>
  <footer class="page-footer">
           <div class="container">
@@ -166,4 +172,9 @@ li a{
           </div>
  </footer>
 
+
 </html>
+
+<!--{% for data in show %}-->
+<!--data.fname-->
+<!--{% endfor %}-->

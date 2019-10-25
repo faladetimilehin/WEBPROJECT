@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <link id="avast_os_ext_custom_font" href="chrome-extension://eofcbnmajmjmplflapaojjnihcjkigck/common/ui/fonts/fonts.css" rel="stylesheet" type="text/css">
     <title>Aerry/about</title>
 
 	<style>
+
 		body{ margin: 0;
-			background-image: url(1.jpg);
+
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 		}
@@ -47,18 +48,10 @@ section{
 form{
 	text-align: center;
 }
-		.city{
-			background-color: tomato;
-			color: white;
-			padding: 10px;
-		}
+
 		h1{color: blue;}
 		p{color: red;}
 		img{width: 100%;}
-		table, th, td {
-			border :1px solid black;
-			border-collapse: collapse;
-		}
 
 	ul{
 		list-style-type: none;
@@ -78,114 +71,135 @@ li a{
 	text-decoration: none;
 }
 </style>
+    <style>
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
 </head>
 <body>
-		<nav>
-			<div class="nav-wrapper">
-				<a href="/" class="brand-logo">Aerry</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href='hi'>Home</a></li>
-				<li><a href="news">News</a></li>
-			    <li><a href="guestform">Guest</a></li>
-			    <li><a href="about">About</a></li>
-			</ul>
-			</div>
-		</nav>
-          <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+      <nav>
+                <div class="nav-wrapper">
+                    <a href="/" class="brand-logo">Aerry</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href='hi'>Home</a></li>
+                    <li><a href="news">News</a></li>
+                    <li><a href="guestform">Guest</a></li>
+                    <li><a href="about">About</a></li>
+                </ul>
+                </div>
+      </nav>
+             <div class="w3-content w3-display-container">
+                  <img src="{% static 'images/background1.jpg'%}" alt="Snow" height="412",width="42">
+                 <div class="centered">
+                    <h1 class="header center teal-text text-lighten-2" style="color:white">Aerry</h1>
+                  <div class="row center">
+                          <h5 class="header col s12 light" style="color:white">A modern way to book appointment within an Organisation</h5>
+                  </div>
+                  <div class="row center">
+                          <a href="guestform" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                  </div>
+                 </div>
+             </div>
       <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
+        <div class="section">
 
-      </div>
-    </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+          <!--   Icon Section   -->
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                <h5 class="center">Speeds up development</h5>
+                <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+              </div>
+            </div>
 
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                <h5 class="center">User Experience Focused</h5>
+                <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+              </div>
+            </div>
 
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                <h5 class="center">Easy to work with</h5>
+                <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
         </div>
       </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
+                <img src="{% static 'images/background2.jpg'%}" alt="Snow" height="312" width="120">
+             <div class="centered">
+                 <div class="row center">
+                      <h5 class="header col s12 light" style="color:white">A modern way to book appointment within an Organisation</h5>
+                 </div>
+             </div>
       </div>
 
-    </div>
-  </div>
+         <div class="container">
+            <div class="section">
 
+              <div class="row">
+                <div class="col s12 center">
+                  <h3><i class="mdi-content-send brown-text"></i></h3>
+                  <h3>Contact Us</h3>
+                  <p class="left-align light">Aerry brings in-depth knowledge in implementation of core banking systems, and digital channels for institutions of various sizes. We work in partnership with the Bank’s in-house specialists from the onset of the project initiation. Our expertise ensures that features that may be absent from off-the-shelf applications are identified and options are professionally discussed.
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
+                      Our highly experienced team of consultants ensure the customization of the core banking solution to meet your requirements. We use a life cycle process approach which includes: Specification gathering and planning, Product customization, Migration, Testing and Going live. More than 25 years of experience working in the industry has enabled us to build our services and solutions in strategy, consulting, digital technologies and operations that help our clients with their digital transformation journey; redefining the banking experience and creating opportunities to the end customer. A team of highly skilled professionals with a focus on making your business run successfully.Swift service delivery via in-depth requirement analysis and efficient time management.</p>
+                </div>
+              </div>
+            </div>
+         </div>
+
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
+            <img src="{% static 'images/background1.jpg'%}" alt="Snow"  height="312" width="120">
+         <div class="centered">
+                  <h5 class="header col s12 light" style="color:white">A modern way to book appointment within an Organisation</h5>
+
+          </div>
+       </div>
 
 
- <footer class="page-footer">
+<footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -204,13 +218,12 @@ li a{
             </div>
           </div>
           <div class="footer-copyright">
-            <div class="container">
+            <div class="container" style="color:white">
             © 2019 Copyright Jethro Systems
             <a class="grey-text text-lighten-4 right" href="mailto:faladetimilehin@yahoo.com"><i class="material-icons">email</i>Support Center</a>
             </div>
           </div>
  </footer>
-
 </body>
 </html>
 

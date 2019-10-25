@@ -78,6 +78,25 @@ li a{
 	padding: 19px;
 	text-decoration: none;
 }
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+color:blue;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
 <body>
@@ -126,6 +145,42 @@ li a{
                 Mountains!
             </div>
             </div>
+            <div class="w3-display-container mySlides">
+              <img src="{% static 'images/6.jpg'%}" style="width:100%">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                Mountains!
+            </div>
+            </div>
+            <div class="w3-display-container mySlides">
+              <img src="{% static 'images/7.jpg'%}" style="width:100%">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                Mountains!
+            </div>
+            </div>
+            <div class="w3-display-container mySlides">
+              <img src="{% static 'images/8.jpg'%}" style="width:100%">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                Mountains!
+            </div>
+            </div>
+            <div class="w3-display-container mySlides">
+              <img src="{% static 'images/9.jpg'%}" style="width:100%">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                Mountains!
+            </div>
+            </div>
+            <div class="w3-display-container mySlides">
+              <img src="{% static 'images/10.jpg'%}" style="width:100%">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                Mountains!
+            </div>
+            </div>
+            <div class="w3-display-container mySlides">
+              <img src="{% static 'images/11.jpg'%}" style="width:100%">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                Mountains!
+            </div>
+            </div>
             <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
         </div>
@@ -169,8 +224,21 @@ function showDivs(n) {
 }
 </script>
 <!--end of image slider script-->
-
-
+        <div >
+            <h1 class="section-title">Create Your Own New Event</h1>
+            <p class="font_roboto">Bring people together, or turn your passion into a business. Eventbrite gives you everything you need to host your best event yet.</p>
+        </div>
+        <div class="row" >
+              <div class="column" style="background-color:pink">
+                  <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/RISKY?src=hash&amp;ref_src=twsrc%5Etfw">#RISKY</a> OUT NOW WORLDWIDE!!!!!! I SABI 😂😂😂🕺🕺💪🏿💪🏿💪🏿 Link pon BIO !! (With this caption) <a href="https://t.co/CUC1kL99C3">pic.twitter.com/CUC1kL99C3</a></p>&mdash; Davido (@iam_Davido) <a href="https://twitter.com/iam_Davido/status/1187098278229413888?ref_src=twsrc%5Etfw">October 23, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <div class="column" style="background-color:pink">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The 30-man shortlist for the 2019 Ballon d&#39;Or 🙌<br><br>Pick your winner 👇 <a href="https://t.co/x2uj6zBoEt">pic.twitter.com/x2uj6zBoEt</a></p>&mdash; Goal (@goal) <a href="https://twitter.com/goal/status/1186532037769023488?ref_src=twsrc%5Etfw">October 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <div class="column" style="background-color:pink">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Mafo?src=hash&amp;ref_src=twsrc%5Etfw">#Mafo</a> out now <a href="https://t.co/aVTM7izPnA">https://t.co/aVTM7izPnA</a> <a href="https://t.co/oGDbgg3Lkd">pic.twitter.com/oGDbgg3Lkd</a></p>&mdash; nairamarley (@officialnairam1) <a href="https://twitter.com/officialnairam1/status/1177533343526731776?ref_src=twsrc%5Etfw">September 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+        </div>
 
 </body>
  <footer class="page-footer">
